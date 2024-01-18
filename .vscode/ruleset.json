@@ -3,6 +3,11 @@
     "description": "General ruleset for the BAC Project.",
     "rules": [
         {
+            "id": "AA0074",
+            "action": "None",
+            "justification": "Rule removed for naming convension"
+        },
+        {
             "id": "AA0215",
             "action": "None",
             "justification": "Rule removed for naming convension"

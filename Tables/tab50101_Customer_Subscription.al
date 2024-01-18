@@ -43,6 +43,8 @@ table 50101 "CSD Customer Subscription"
                     end
                 end else
                     "Start Date" := 0D;
+                if "Next Invoice Date" = 0D then
+                    "Next Invoice Date" := "Start Date";
 
                 //Then set the item no from the subscription record
                 "Item No." := Subscription."Item Number";
@@ -67,6 +69,11 @@ table 50101 "CSD Customer Subscription"
         {
             Caption = 'Start Date';
             DataClassification = CustomerContent;
+            trigger OnValidate()
+            begin
+                if "Last Invoice Date" = 0D then
+                    "Next Invoice Date" := "Start Date";
+            end;
         }
         field(5; "Last Invoice Date"; Date)
         {
