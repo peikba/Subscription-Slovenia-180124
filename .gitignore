@@ -1,0 +1,4 @@
+*.app
+.vscode/launch.json
+.vscode/rad.json
+Translations/Subscription Solvenia.g.xlf
