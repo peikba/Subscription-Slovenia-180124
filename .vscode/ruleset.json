@@ -1,0 +1,16 @@
+{
+    "name": "BAC ruleset",
+    "description": "General ruleset for the BAC Project.",
+    "rules": [
+        {
+            "id": "AA0215",
+            "action": "None",
+            "justification": "Rule removed for naming convension"
+        },
+        {
+            "id": "AW0006",
+            "action": "None",
+            "justification": "Rule removed for Usage Category Application Area"
+        }
+    ]
+}
