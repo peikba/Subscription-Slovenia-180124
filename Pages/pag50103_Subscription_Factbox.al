@@ -42,7 +42,9 @@ page 50103 "CSD Subscription FactBox"
 
     trigger OnAfterGetCurrRecord()
     begin
+        Rec.FilterGroup(4);
         ShowCustomerNo := (Rec.GetFilter("Customer No.") = '');
         ShowItemNo := (Rec.GetFilter("Item No.") = '');
+        Rec.FilterGroup(0);
     end;
 }
